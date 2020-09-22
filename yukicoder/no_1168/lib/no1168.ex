@@ -14,8 +14,7 @@ defmodule No1168 do
     result = result + String.to_integer(<<head::utf8>>)
 
     if  String.length(Integer.to_string(result)) > 1 do
-      result = split_sum(Integer.to_charlist(result))
-      result
+      split_sum(Integer.to_charlist(result))
     else
       result
     end
